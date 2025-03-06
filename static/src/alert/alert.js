@@ -15,11 +15,12 @@ patch(HomeMenu.prototype,{
         })
 
         onWillStart(async () => {
-            const alerts = await this.orm.searchRead('alerts.alerts',[['alert_status','=','1']],['alert'])
+            const alerts = await this.orm.searchRead('alerts.alerts',[['alert_status','=','1']])
             alerts.forEach(alert => {
                 alert.hidden = true
             });
             this.state.alerts = alerts
+            console.log(this.state.alerts)
         })
 
         

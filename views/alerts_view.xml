@@ -6,9 +6,10 @@
         <field name="name">view.alerts.alerts.list</field>
         <field name="model">alerts.alerts</field>
         <field name="arch" type="xml">
-            <list>
+            <list multi_edit="1">
                 <field name="alert"/>
                 <field name="alert_status" />
+                <field name="alert_type" />
             </list>
         </field>
     </record>
@@ -25,7 +26,14 @@
                         <h1>
                             <field name="alert" placeholder="Write alert message here...."/>
                         </h1>
-                        <field name="alert_status" widget="radio"/>
+                        <group>
+                        <group>
+                        <field name="alert_status" />
+                        </group>
+                        <group>
+                        <field name="alert_type" />
+                        </group>
+                        </group>
                     </div>
                 </sheet>
             </form>
