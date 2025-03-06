@@ -23,7 +23,6 @@ patch(HomeMenu.prototype,{
                 alert.hidden = false
             });
             this.state.alerts = alerts
-            const until_date = this.state.alerts[0].until_date
         })
 
         
