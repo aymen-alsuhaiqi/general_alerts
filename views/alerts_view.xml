@@ -33,6 +33,9 @@
                         <group>
                         <field name="alert_type" />
                         </group>
+                        <group>
+                        <field name="until_date" />
+                        </group>
                         </group>
                     </div>
                 </sheet>

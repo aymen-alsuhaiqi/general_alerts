@@ -17,15 +17,17 @@ patch(HomeMenu.prototype,{
         onWillStart(async () => {
             const alerts = await this.orm.searchRead('alerts.alerts',[['alert_status','=','1']])
             alerts.forEach(alert => {
-                alert.hidden = true
+                alert.hidden = false
             });
             this.state.alerts = alerts
-            console.log(this.state.alerts)
+            const currentDate = new Date()
+            const until_date = this.state.alerts[0].until_date
+            this.state.isStillAvailable = currentDate.toISOString().replace('T', ' ').replace('Z','')
         })
 
         
     },
     dismiss(a){
-        a.hidden = false
+        a.hidden = true
     }
 })

@@ -14,4 +14,5 @@ class Alerts(models.Model):
         ('warning','warning'),
         ('secondary','secondary'),
     ],_('Alert Type'),required=True,default='primary')
+    until_date = fields.Datetime(required=True)
     
