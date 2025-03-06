@@ -46,6 +46,16 @@
         </field>
     </record>
 
+    <record id="alert_view_search" model="ir.ui.view">
+        <field name="name">alert.view.search</field>
+        <field name="model">alerts.alerts</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <filter name="active_alert" string="active alert" domain="[('until_date', '&gt;=', context_today())]"/>
+            </search>
+        </field>
+    </record>
+
     <!-- Action alerts.alerts -->
     <record id="action_alerts_alerts" model="ir.actions.act_window">
         <field name="name">Alerts Alerts</field>
@@ -57,6 +67,7 @@
                 There is no examples click here to add new Alerts Alerts.
             </p>
         </field>
+        <field name="context">{'search_default_active_alert':1}</field>
     </record>
 
     <menuitem id="alert_menu" name="Alerts" sequence="103">
