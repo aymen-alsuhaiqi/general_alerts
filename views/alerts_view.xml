@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- View alerts.alerts View List -->
+    <record id="view_alerts_alerts_list" model="ir.ui.view">
+        <field name="name">view.alerts.alerts.list</field>
+        <field name="model">alerts.alerts</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="alert"/>
+                <field name="alert_status" />
+            </list>
+        </field>
+    </record>
+
+    <!-- View alerts.alerts form -->
+    <record id="view_alerts_alerts_form" model="ir.ui.view">
+        <field name="name">view.alerts.alerts.form</field>
+        <field name="model">alerts.alerts</field>
+        <field name="arch" type="xml">
+            <form string="Alerts Alerts">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="alert"/>
+                        <h1>
+                            <field name="alert" placeholder="Write alert message here...."/>
+                        </h1>
+                        <field name="alert_status" widget="radio"/>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action alerts.alerts -->
+    <record id="action_alerts_alerts" model="ir.actions.act_window">
+        <field name="name">Alerts Alerts</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">alerts.alerts</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                There is no examples click here to add new Alerts Alerts.
+            </p>
+        </field>
+    </record>
+
+</odoo>

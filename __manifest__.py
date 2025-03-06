@@ -1,0 +1,19 @@
+{
+    'name': 'Global Alert',
+    'version': '1.0',
+    'description': 'Global Alert',
+    'summary': 'this is a global alert app for create global notifications that shows in home menu page',
+    'author': 'Aymen Alsuhaiqi',
+    'license': 'LGPL-3',
+    'category': '',
+    'depends': [
+        'base'
+    ],
+    "data": [
+        "views/alerts_view.xml"
+    ],
+    'application': True,
+    'assets': {
+        
+    }
+}
