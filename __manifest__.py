@@ -7,13 +7,16 @@
     'license': 'LGPL-3',
     'category': '',
     'depends': [
-        'base'
+        'base','web_enterprise'
     ],
     "data": [
-        "views/alerts_view.xml"
+        "security/ir.model.access.csv",
+        "views/alerts_view.xml",
     ],
     'application': True,
     'assets': {
-        
+        'web.assets_backend': [
+            "global_alert/static/src/**/*",
+        ],
     }
 }

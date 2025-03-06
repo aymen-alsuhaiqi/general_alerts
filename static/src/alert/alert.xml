@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="global_alerts.AlertMessage" t-inherit="web_enterprise.HomeMenu" t-inherit-mode="extension" >
+        <xpath expr="//input[hasclass('o_search_hidden')]" position="after">
+            <t t-foreach="state.alerts" t-as="alert" t-key="alert.id">
+                <div t-if="alert.hidden" class="alert alert-success text-center" role="alert">
+                    <t t-esc="alert.alert"/>
+                    <a href="#" class="oe_instance_hide_panel float-end alert-link" t-on-click.prevent="() => this.dismiss(alert)" aria-label="Dismiss">x</a>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

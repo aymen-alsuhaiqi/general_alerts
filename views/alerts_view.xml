@@ -45,4 +45,10 @@
         </field>
     </record>
 
+    <menuitem id="alert_menu" name="Alerts" sequence="103">
+
+    <menuitem id="message_alert_menu" name="messages" action="action_alerts_alerts" sequence="1"/>
+    </menuitem>
+
+
 </odoo>
