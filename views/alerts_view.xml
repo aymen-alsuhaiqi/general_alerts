@@ -7,8 +7,9 @@
         <field name="model">alerts.alerts</field>
         <field name="arch" type="xml">
             <list multi_edit="1">
-                <field name="alert"/>
+                <field name="alert_title"/>
                 <field name="alert_status" />
+                <field name="alert_const" />
                 <field name="alert_type" />
             </list>
         </field>
@@ -22,10 +23,14 @@
             <form string="Alerts Alerts">
                 <sheet>
                     <div class="oe_title">
-                        <label for="alert"/>
+                        <label for="alert_title"/>
                         <h1>
-                            <field name="alert" placeholder="Write alert message here...."/>
+                            <field name="alert_title"/>
                         </h1>
+                        <label for="alert"/>
+                        <h2>
+                            <field name="alert" placeholder="Write alert message here...."/>
+                        </h2>
                         <group>
                         <group>
                         <field name="alert_status" />
