@@ -56,7 +56,7 @@
         <field name="model">alerts.alerts</field>
         <field name="arch" type="xml">
             <search string="">
-                <filter name="active_alert" string="active alert" domain="[('until_date', '&gt;=', context_today())]"/>
+                <filter name="active_alert" string="active alert" domain="[('until_date', '&gt;=', context_today()),('alert_status','=',True)]"/>
             </search>
         </field>
     </record>

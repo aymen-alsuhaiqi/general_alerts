@@ -1,0 +1,172 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* global_alert
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-09 23:59+0000\n"
+"PO-Revision-Date: 2025-03-09 23:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__alert_status
+msgid "Active alert"
+msgstr "تفعيل التنبيه"
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__alert
+msgid "Alert Message"
+msgstr "رسالة التنبيه"
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__alert_type
+msgid "Alert Type"
+msgstr "نوع التنبيه"
+
+#. module: global_alert
+#: model:ir.ui.menu,name:global_alert.alert_menu
+msgid "Alerts"
+msgstr "التنبيهات"
+
+#. module: global_alert
+#: model:ir.actions.act_window,name:global_alert.action_alerts_alerts
+#: model_terms:ir.ui.view,arch_db:global_alert.view_alerts_alerts_form
+msgid "Alerts Alerts"
+msgstr "التنبيهات"
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__alert_const
+msgid "Allow user close alert"
+msgstr "السماح للمستخدم بإغلاق التنبية"
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__create_uid
+msgid "Created by"
+msgstr "انشئ بواسطة"
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__create_date
+msgid "Created on"
+msgstr "انشئ في"
+
+#. module: global_alert
+#. odoo-javascript
+#: code:addons/global_alert/static/src/alert/alert.xml:0
+msgid "Dismiss"
+msgstr ""
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__write_uid
+msgid "Last Updated by"
+msgstr "اخر تحديث بواسطة"
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__write_date
+msgid "Last Updated on"
+msgstr "اخر تحديث في"
+
+#. module: global_alert
+#: model_terms:ir.actions.act_window,help:global_alert.action_alerts_alerts
+msgid "There is no examples click here to add new Alerts Alerts."
+msgstr "لا يوجد تنبيهات انقر هنا للإنشاء"
+
+#. module: global_alert
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__until_date
+msgid "Until Date"
+msgstr "تاريخ انتهاء التنبية"
+
+#. module: global_alert
+#: model_terms:ir.ui.view,arch_db:global_alert.view_alerts_alerts_form
+msgid "Write alert message here...."
+msgstr "اكتب رسالة التنبية هنا...."
+
+#. module: global_alert
+#: model_terms:ir.ui.view,arch_db:global_alert.alert_view_search
+msgid "active alert"
+msgstr "التنبيهات الجارية"
+
+#. module: global_alert
+#: model:ir.model,name:global_alert.model_alerts_alerts
+msgid "alerts"
+msgstr "التنبيهات"
+
+#. module: global_alert
+#: model:ir.model.fields.selection,name:global_alert.selection__alerts_alerts__alert_type__danger
+msgid "danger"
+msgstr ""
+
+#. module: global_alert
+#: model:ir.model.fields.selection,name:global_alert.selection__alerts_alerts__alert_type__info
+msgid "info"
+msgstr ""
+
+#. module: global_alert
+#: model:ir.ui.menu,name:global_alert.message_alert_menu
+msgid "messages"
+msgstr "رسائل التنبية"
+
+#. module: global_alert
+#: model:ir.model.fields.selection,name:global_alert.selection__alerts_alerts__alert_type__primary
+msgid "primary"
+msgstr ""
+
+#. module: global_alert
+#: model:ir.model.fields.selection,name:global_alert.selection__alerts_alerts__alert_type__secondary
+msgid "secondary"
+msgstr ""
+
+#. module: global_alert
+#: model:ir.model.fields.selection,name:global_alert.selection__alerts_alerts__alert_type__success
+msgid "success"
+msgstr ""
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,field_description:global_alert.field_alerts_alerts__alert_title
+msgid "title"
+msgstr "العنوان"
+
+#. module: global_alert
+#: model:ir.model.fields.selection,name:global_alert.selection__alerts_alerts__alert_type__warning
+msgid "warning"
+msgstr ""
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,help:global_alert.field_alerts_alerts__alert
+msgid "write alert message here"
+msgstr "اكتب رسالة التنبية هنا"
+
+#. module: global_alert
+#. odoo-python
+#: code:addons/global_alert/models/alerts.py:0
+#: model:ir.model.fields,help:global_alert.field_alerts_alerts__alert_title
+msgid "write alert title here"
+msgstr "اكتب عنوان التنبية"
