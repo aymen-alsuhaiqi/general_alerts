@@ -7,7 +7,7 @@ class Alerts(models.Model):
 
     alert_title = fields.Char(_('title'),help=_('write alert title here'))
     alert = fields.Text(_('Alert Message'),help=_('write alert message here'),required=True)
-    alert_status = fields.Boolean(_('Active alert'))
+    alert_status = fields.Boolean(_('Active alert'),default=True)
     alert_type = fields.Selection([
         ('info','info'),
         ('success', 'success'),
