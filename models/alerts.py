@@ -1,4 +1,5 @@
 from odoo import fields,models,api,_
+from datetime import datetime, timedelta
 
 class Alerts(models.Model):
     _name = 'alerts.alerts'
@@ -16,5 +17,5 @@ class Alerts(models.Model):
         ('warning','warning'),
         ('secondary','secondary'),
     ],_('Alert Type'),required=True,default='info')
-    until_date = fields.Datetime(required=True)
+    until_date = fields.Datetime(required=True, default=lambda self: datetime.now() + timedelta(days=1))
     alert_const = fields.Boolean(_('Allow user close alert'),default=True)
