@@ -3,7 +3,7 @@
     'version': '1.0',
     'description': 'General Alert',
     'summary': 'this is a general alert app for create general notifications that shows in home menu page',
-    'author': 'Aymen Alsuhaiqi',
+    'author': 'AMT',
     'license': 'LGPL-3',
     'category': '',
     'depends': [
