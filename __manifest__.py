@@ -3,7 +3,7 @@
     'version': '1.0',
     'description': 'Global Alert',
     'summary': 'this is a global alert app for create global notifications that shows in home menu page',
-    'author': 'Aymen Alsuhaiqi',
+    'author': 'AMT',
     'license': 'LGPL-3',
     'category': '',
     'depends': [
