@@ -1,8 +1,8 @@
 {
-    'name': 'Global Alert',
+    'name': 'General Alert',
     'version': '1.0',
-    'description': 'Global Alert',
-    'summary': 'this is a global alert app for create global notifications that shows in home menu page',
+    'description': 'General Alert',
+    'summary': 'this is a general alert app for create general notifications that shows in home menu page',
     'author': 'Aymen Alsuhaiqi',
     'license': 'LGPL-3',
     'category': '',
@@ -16,7 +16,7 @@
     'application': True,
     'assets': {
         'web.assets_backend': [
-            "global_alert/static/src/**/*",
+            "general_alert/static/src/**/*",
         ],
     }
 }
