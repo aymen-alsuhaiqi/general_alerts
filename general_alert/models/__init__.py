@@ -1,1 +1,1 @@
-from . import alerts
+from . import general_alerts

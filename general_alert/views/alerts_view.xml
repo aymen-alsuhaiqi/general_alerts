@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- View alerts.alerts View List -->
-    <record id="view_alerts_alerts_list" model="ir.ui.view">
-        <field name="name">view.alerts.alerts.list</field>
-        <field name="model">alerts.alerts</field>
+    <!-- View general.alerts View List -->
+    <record id="view_general_alerts_list" model="ir.ui.view">
+        <field name="name">view.general.alerts.list</field>
+        <field name="model">general.alerts</field>
         <field name="arch" type="xml">
             <list multi_edit="1">
                 <field name="alert_title"/>
@@ -15,10 +15,10 @@
         </field>
     </record>
 
-    <!-- View alerts.alerts form -->
-    <record id="view_alerts_alerts_form" model="ir.ui.view">
-        <field name="name">view.alerts.alerts.form</field>
-        <field name="model">alerts.alerts</field>
+    <!-- View general.alerts form -->
+    <record id="view_general_alerts_form" model="ir.ui.view">
+        <field name="name">view.general.alerts.form</field>
+        <field name="model">general.alerts</field>
         <field name="arch" type="xml">
             <form string="Alerts Alerts">
                 <sheet>
@@ -53,7 +53,7 @@
 
     <record id="alert_view_search" model="ir.ui.view">
         <field name="name">alert.view.search</field>
-        <field name="model">alerts.alerts</field>
+        <field name="model">general.alerts</field>
         <field name="arch" type="xml">
             <search string="">
                 <filter name="active_alert" string="active alert" domain="[('until_date', '&gt;=', context_today()),('alert_status','=',True)]"/>
@@ -61,11 +61,11 @@
         </field>
     </record>
 
-    <!-- Action alerts.alerts -->
-    <record id="action_alerts_alerts" model="ir.actions.act_window">
-        <field name="name">Alerts Alerts</field>
+    <!-- Action general.alerts -->
+    <record id="action_general_alerts" model="ir.actions.act_window">
+        <field name="name">General Alerts</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">alerts.alerts</field>
+        <field name="res_model">general.alerts</field>
         <field name="view_mode">list,form</field>
         <field name="help" type="html">
             <p class="oe_view_nocontent_create">
@@ -77,7 +77,7 @@
 
     <menuitem id="alert_menu" name="Alerts" sequence="103">
 
-    <menuitem id="message_alert_menu" name="messages" action="action_alerts_alerts" sequence="1"/>
+    <menuitem id="message_alert_menu" name="messages" action="action_general_alerts" sequence="1"/>
     </menuitem>
 
 

@@ -17,7 +17,7 @@ patch(HomeMenu.prototype,{
         onWillStart(async () => {
             const currentDate = new Date()
             this.state.isStillAvailable = currentDate.toISOString().replace('T', ' ').replace('Z','')
-            const alerts = await this.orm.searchRead('alerts.alerts',[['alert_status','=','1']
+            const alerts = await this.orm.searchRead('general.alerts',[['alert_status','=','1']
                 ,['until_date','>',this.state.isStillAvailable]])
             alerts.forEach(alert => {
                 alert.hidden = false

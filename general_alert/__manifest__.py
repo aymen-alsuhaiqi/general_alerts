@@ -5,7 +5,6 @@
     'summary': 'this is a general alert app for create general notifications that shows in home menu page',
     'author': 'AMT',
     'license': 'LGPL-3',
-    'category': '',
     'depends': [
         'base','web_enterprise'
     ],

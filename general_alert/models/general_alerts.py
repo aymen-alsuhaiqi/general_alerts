@@ -1,8 +1,8 @@
 from odoo import fields,models,api,_
 from datetime import datetime, timedelta
 
-class Alerts(models.Model):
-    _name = 'alerts.alerts'
+class GeneralAlerts(models.Model):
+    _name = 'general.alerts'
     _description = 'alerts'
     _rec_name = 'alert_title'
 
