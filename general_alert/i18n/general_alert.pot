@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0+e\n"
+"Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-09 23:57+0000\n"
-"PO-Revision-Date: 2025-03-09 23:57+0000\n"
+"POT-Creation-Date: 2025-07-15 20:12+0000\n"
+"PO-Revision-Date: 2025-07-15 20:12+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,22 +17,25 @@ msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,field_description:general_alert.field_general_alerts__alert_status
+#, python-format
 msgid "Active alert"
 msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,field_description:general_alert.field_general_alerts__alert
+#, python-format
 msgid "Alert Message"
 msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,field_description:general_alert.field_general_alerts__alert_type
+#, python-format
 msgid "Alert Type"
 msgstr ""
 
@@ -42,15 +45,15 @@ msgid "Alerts"
 msgstr ""
 
 #. module: general_alert
-#: model:ir.actions.act_window,name:general_alert.action_general_alerts
 #: model_terms:ir.ui.view,arch_db:general_alert.view_general_alerts_form
-msgid "General Alerts"
+msgid "Alerts Alerts"
 msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,field_description:general_alert.field_general_alerts__alert_const
+#, python-format
 msgid "Allow user close alert"
 msgstr ""
 
@@ -67,12 +70,28 @@ msgstr ""
 #. module: general_alert
 #. odoo-javascript
 #: code:addons/general_alert/static/src/alert/alert.xml:0
+#, python-format
 msgid "Dismiss"
 msgstr ""
 
 #. module: general_alert
 #: model:ir.model.fields,field_description:general_alert.field_general_alerts__display_name
 msgid "Display Name"
+msgstr ""
+
+#. module: general_alert
+#: model:ir.module.category,name:general_alert.general_alert_manager_category
+msgid "General Alert Category"
+msgstr ""
+
+#. module: general_alert
+#: model:res.groups,name:general_alert.general_alert_manager_group
+msgid "General Alert Manager"
+msgstr ""
+
+#. module: general_alert
+#: model:ir.actions.act_window,name:general_alert.action_general_alerts
+msgid "General Alerts"
 msgstr ""
 
 #. module: general_alert
@@ -147,8 +166,9 @@ msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,field_description:general_alert.field_general_alerts__alert_title
+#, python-format
 msgid "title"
 msgstr ""
 
@@ -159,14 +179,16 @@ msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,help:general_alert.field_general_alerts__alert
+#, python-format
 msgid "write alert message here"
 msgstr ""
 
 #. module: general_alert
 #. odoo-python
-#: code:addons/general_alert/models/alerts.py:0
+#: code:addons/general_alert/models/general_alerts.py:0
 #: model:ir.model.fields,help:general_alert.field_general_alerts__alert_title
+#, python-format
 msgid "write alert title here"
 msgstr ""

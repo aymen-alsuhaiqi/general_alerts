@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="general_alert_manager_category" model="ir.module.category">
+        <field name="name">General Alert Category</field>
+    </record>
+
+    <record id="general_alert_manager_group" model="res.groups">
+        <field name="name">General Alert Manager</field>
+        <field name="category_id" ref="general_alert_manager_category"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+</odoo>

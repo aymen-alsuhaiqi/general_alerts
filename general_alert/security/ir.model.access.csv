@@ -1,2 +1,4 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-access_general_alerts_manager,general_alerts_manager,model_general_alerts,,1,1,1,1
+access_general_alerts_manager,general_alerts_manager,model_general_alerts,general_alert_manager_group,1,1,1,1
+access_general_alerts_user,general_alerts_user,model_general_alerts,,1,0,0,0
+
