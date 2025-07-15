@@ -1,6 +1,6 @@
 {
     'name': 'General Alert',
-    'version': '1.0',
+    'version': '17.0.1.0',
     'description': 'General Alert',
     'summary': 'this is a general alert app for create general notifications that shows in home menu page',
     'author': 'AMT',
