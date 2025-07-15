@@ -9,13 +9,15 @@ import { cookie } from "@web/core/browser/cookie";
 
 patch(HomeMenu.prototype,{
     setup(){
-        super.setup();
+        super.setup(...arguments);
         this.orm = useService('orm');
         this.state = useState({
             ...this.state,
             alerts:[]
         })
-
+         /**
+         * @override
+         */
         onWillStart(async () => {
             const currentDate = new Date()
             this.state.isStillAvailable = currentDate.toISOString().replace('T', ' ').replace('Z','')
@@ -31,9 +33,9 @@ patch(HomeMenu.prototype,{
             });
             this.state.alerts = alerts
         })
-        
-        
     },
+        
+        
     dismiss(a){
         a.hidden = true
         let ids_alert_hide = new Set();
