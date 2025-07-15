@@ -9,6 +9,7 @@
         'base','web_enterprise'
     ],
     "data": [
+        "security/general_alert_security.xml",
         "security/ir.model.access.csv",
         "views/alerts_view.xml",
     ],
